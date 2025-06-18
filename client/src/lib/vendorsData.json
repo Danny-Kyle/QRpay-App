@@ -1,0 +1,38 @@
+{
+  "vendors": [
+    {
+      "id": "crystal",
+      "name": "Crystal",
+      "description": "Premium crystal items and accessories",
+      "qrAccount": "crystal_account_001",
+      "items": [
+        { "id": "cr001", "name": "Crystal Necklace", "price": 15000 },
+        { "id": "cr002", "name": "Crystal Bracelet", "price": 8500 },
+        { "id": "cr003", "name": "Crystal Earrings", "price": 12000 },
+        { "id": "cr004", "name": "Crystal Ring", "price": 6500 },
+        { "id": "cr005", "name": "Crystal Pendant", "price": 9800 },
+        { "id": "cr006", "name": "Crystal Anklet", "price": 7200 },
+        { "id": "cr007", "name": "Crystal Watch", "price": 25000 },
+        { "id": "sh001", "name": "Luxury Shoes", "price": 18000 },
+        { "id": "sh002", "name": "Designer Sneakers", "price": 22000 }
+      ]
+    },
+    {
+      "id": "diamond",
+      "name": "Diamond",
+      "description": "Exquisite diamond jewelry and luxury items",
+      "qrAccount": "diamond_account_002",
+      "items": [
+        { "id": "dm001", "name": "Diamond Ring", "price": 45000 },
+        { "id": "dm002", "name": "Diamond Necklace", "price": 65000 },
+        { "id": "dm003", "name": "Diamond Earrings", "price": 38000 },
+        { "id": "dm004", "name": "Diamond Bracelet", "price": 55000 },
+        { "id": "dm005", "name": "Diamond Pendant", "price": 42000 },
+        { "id": "dm006", "name": "Diamond Brooch", "price": 35000 },
+        { "id": "dm007", "name": "Diamond Cufflinks", "price": 28000 },
+        { "id": "sh001", "name": "Luxury Shoes", "price": 20000 },
+        { "id": "ac001", "name": "Premium Wallet", "price": 15500 }
+      ]
+    }
+  ]
+}

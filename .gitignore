@@ -1,0 +1,26 @@
+# Node.js
+node_modules/
+npm-debug.log
+.env
+build/
+dist/
+tmp/
+*.log
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Editor/OS specific
+*.swp
+*~
+.idea/
+.project
+.classpath
+.settings/
+.cache/
+
+# React Vite specific
+.vite/
