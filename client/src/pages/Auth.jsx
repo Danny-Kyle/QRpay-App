@@ -79,7 +79,7 @@ const Auth = () => {
 
           <div className='mb-4 flex items-center gap-3 w-full px-5 py-2.5 rounded-full bg-[#333A5C]'>
             <img src={assets.lock_icon} alt="password" className='w-6'/>
-            <input onChange={e => setPassword(e.target.password)} value={password} className='bg-transparent outline-none text-white' type="password" placeholder='Password' required/>
+            <input onChange={e => setPassword(e.target.value)} value={password} className='bg-transparent outline-none text-white' type="password" placeholder='Password' required/>
           </div>
           <p onClick={()=> navigate("/password-reset")} className='cursor-pointer mb-4 text-amber-50'>Forgot Password?</p>
           <button className='w-full py-2.5 rounded-full text-amber-50 cursor-pointer transition ease-in-out font-medium hover:bg-gradient-to-tr from-sky-300 to-emerald-200 hover:text-slate-900'>{state}</button>

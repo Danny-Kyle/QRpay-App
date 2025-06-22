@@ -8,7 +8,7 @@ export const AppContextProvider = (props) => {
 
     axios.defaults.withCredentials = true;
 
-    const backendURI = import.meta.env.VITE_BACKEND_URI
+    const backendURI = import.meta.env.VITE_BACKEND_URL
     const [isLoggedIn, setIsLoggedIn] = useState(false)
     const [userData, setUserData] = useState(false)
 

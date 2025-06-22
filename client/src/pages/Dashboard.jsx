@@ -336,7 +336,7 @@ const Dashboard = () => {
         ))}
 
       <div className="flex flex-row justify-between">
-        <div>Wallet Balance</div>
+        <div>Wallet Balance: {userData.wallet}</div>
         <div>Deposit Component caller</div>
       </div>
     </div>
