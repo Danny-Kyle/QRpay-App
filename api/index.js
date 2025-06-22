@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 
-const allowedOrigins = ['http://localhost:5173']
+const allowedOrigins = ['http://localhost:5173', 'https://zesty-pothos-ff7fb8.netlify.app/']
 
 app.use(express.json());
 app.use(cookieParser());
