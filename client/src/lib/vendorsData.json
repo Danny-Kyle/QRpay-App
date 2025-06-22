@@ -3,24 +3,34 @@
     {
       "id": "crystal",
       "name": "Crystal",
-      "description": "Premium crystal items and accessories",
+      "description": "Premium and quality fod items",
       "qrAccount": "crystal_account_001",
       "items": [
-        { "id": "cr001", "name": "Crystal Necklace", "price": 15000 },
-        { "id": "cr002", "name": "Crystal Bracelet", "price": 8500 },
-        { "id": "cr003", "name": "Crystal Earrings", "price": 12000 },
-        { "id": "cr004", "name": "Crystal Ring", "price": 6500 },
-        { "id": "cr005", "name": "Crystal Pendant", "price": 9800 },
-        { "id": "cr006", "name": "Crystal Anklet", "price": 7200 },
-        { "id": "cr007", "name": "Crystal Watch", "price": 25000 },
-        { "id": "sh001", "name": "Luxury Shoes", "price": 18000 },
-        { "id": "sh002", "name": "Designer Sneakers", "price": 22000 }
+        { "id": "cr001", "name": "Jollof Rice", "price": 600 },
+        { "id": "cr002", "name": "Fried Rice", "price": 600 },
+        { "id": "cr003", "name": "Rice & Beans", "price": 800 },
+        { "id": "cr004", "name": "Beans (Ewa)", "price": 400 },
+        { "id": "cr005", "name": "Jollof Spaghetti", "price": 600 },
+        { "id": "cr006", "name": "Fish", "price": 500 },
+        { "id": "cr007", "name": "Meat", "price": 500 },
+        { "id": "cr008", "name": "Moi Moi", "price": 400 },
+        { "id": "sh001", "name": "Bread & Egg", "price": 700 },
+        { "id": "sh002", "name": "Suya", "price": 200 },
+        { "id": "sh003", "name": "Soft Drinks", "price": 500 },
+        { "id": "sh004", "name": "Ice Tea", "price": 1200 },
+        { "id": "sh005", "name": "Chivita Active Small", "price": 800 },
+        { "id": "sh006", "name": "Chivita Active Big", "price": 1800 },
+        { "id": "sh007", "name": "Viju Milk", "price": 800 },
+        { "id": "sh008", "name": "Fizzy Drink", "price": 500 },
+        { "id": "sh009", "name": "Fayrouz", "price": 800 },
+        { "id": "sh010", "name": "Amstel Malta", "price": 700 },
+        { "id": "sh011", "name": "Yoghurt", "price": 700 }
       ]
     },
     {
       "id": "diamond",
       "name": "Diamond",
-      "description": "Exquisite diamond jewelry and luxury items",
+      "description": "Exquisite dishes and luxury food items",
       "qrAccount": "diamond_account_002",
       "items": [
         { "id": "dm001", "name": "Diamond Ring", "price": 45000 },
@@ -30,8 +40,22 @@
         { "id": "dm005", "name": "Diamond Pendant", "price": 42000 },
         { "id": "dm006", "name": "Diamond Brooch", "price": 35000 },
         { "id": "dm007", "name": "Diamond Cufflinks", "price": 28000 },
-        { "id": "sh001", "name": "Luxury Shoes", "price": 20000 },
-        { "id": "ac001", "name": "Premium Wallet", "price": 15500 }
+        { "id": "dm008", "name": "Diamond Cufflinks", "price": 28000 },
+        { "id": "ac001", "name": "White Spaghetti", "price": 600 },
+        { "id": "ac002", "name": "Asun Rice", "price": 1100 },
+        { "id": "ac003", "name": "Swallow ( Eba, Fufu, Semo, Amala )", "price": 200 },
+        { "id": "ac004", "name": "Eguisi", "price": 300 },
+        { "id": "ac005", "name": "Efo riro", "price": 300 },
+        { "id": "ac006", "name": "Afang soup", "price": 400 },
+        { "id": "ac007", "name": "Ewedu", "price": 200 },
+        { "id": "ac008", "name": "Ofada rice", "price": 800 },
+        { "id": "ac009", "name": "Toast Bread and Egg", "price": 800 },
+        { "id": "ac010", "name": "Shawarma", "price": 1500 },
+        { "id": "ac011", "name": "Chicken & Chips", "price": 3000 },
+        { "id": "ac012", "name": "Yam & Fish", "price": 4000 },
+        { "id": "ac013", "name": "Waffles", "price": 2500 },
+        { "id": "ac014", "name": "Chinese Rice", "price": 5000 },
+        { "id": "ac015", "name": "Premium Consumer Variety Buffet", "price": 15500 }
       ]
     }
   ]
