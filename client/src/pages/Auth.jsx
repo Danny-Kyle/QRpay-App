@@ -24,7 +24,7 @@ const Auth = () => {
       let successMessage;
       let errorMessage;
 
-      // axios.defaults.withCredentials = true;
+      axios.defaults.withCredentials = true;
 
       if(state === "Sign Up"){
         response = await axios.post(backendURI + '/api/auth/register', {name, email, password});
