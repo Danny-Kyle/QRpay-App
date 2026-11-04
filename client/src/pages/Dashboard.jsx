@@ -14,7 +14,7 @@ const Dashboard = () => {
   const [currentCartVendorId, setCurrentCartVendorId] = useState(null);
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
   const [paymentVendorDetails, setPaymentVendorDetails] = useState(null);
-  const [isPaymentProcessed, setIsPaymentProcessed] = useState(false);
+  const [isDemoCompleted, setIsDemoCompleted] = useState(false);
 
   //   const viewvendor = vendorsData.vendors;
 
@@ -53,34 +53,15 @@ const Dashboard = () => {
     if (vendorForCheckout) {
       setPaymentVendorDetails(vendorForCheckout);
       setIsPaymentModalOpen(true);
-      setIsPaymentProcessed(false); // Reset payment status when opening modal
+      setIsDemoCompleted(false);
     } else {
       alert("Could not find vendor details for checkout. Please try again.");
     }
   };
 
-  const handlePaymentProcessed = () => {
-    setIsPaymentProcessed(true); // Set state to true when payment is processed
-    // In a real application, after successful payment, you would:
-    // 1. Clear the cart
-    // 2. Potentially navigate to an order confirmation page
-    // 3. Update user's wallet balance
-    // 4. Send order to backend
-    // document.getElementById('payment-processed-modal').style.display = 'flex'; // Show the "Payment Processed" modal
-    // setTimeout(() => {
-    //   setIsPaymentModalOpen(false); // Close the main modal after a delay
-    //   clearCart(); // Clear the cart
-    //   setIsPaymentProcessed(false); // Reset payment status
-    // }, 3000); // Close after 3 seconds for demo
-  };
-
   const handleClosePaymentModal = () => {
     setIsPaymentModalOpen(false);
-    setIsPaymentProcessed(false); // Reset this when closing the main modal
-    if (isPaymentProcessed) { // Only clear cart if payment was actually processed
-      clearCart(); // Clear the cart after successful payment simulation
-    }
-    // document.getElementById('payment-processed-modal').style.display = 'none'; // Ensure the sub-modal is hidden
+    if (isDemoCompleted) clearCart();
   };
 
   const addToCart = (item, vendorName, vendorId) => {
@@ -336,8 +317,7 @@ const Dashboard = () => {
         ))}
 
       <div className="flex flex-row justify-between">
-        <div>Wallet Balance: {userData.wallet}</div>
-        <div>Deposit Component caller</div>
+        <div>Demo wallet balance: {userData.wallet}</div>
       </div>
     </div>
 
@@ -426,14 +406,13 @@ const Dashboard = () => {
       )}
 
       {/**Payment Modal */}
-      <PaymentModal
-        isOpen={isPaymentModalOpen}
-        onClose={handleClosePaymentModal} // Use the new close handler
+      {isPaymentModalOpen && <PaymentModal
+        onClose={handleClosePaymentModal}
         vendor={paymentVendorDetails}
         totalAmount={getTotalPrice()}
-        onPaymentProcessed={handlePaymentProcessed} 
-        cart = {cart}// Pass the payment processed handler
-      />
+        onPaymentProcessed={() => setIsDemoCompleted(true)}
+        cart={cart}
+      />}
     </div>
   );
 };

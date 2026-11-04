@@ -10,16 +10,16 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 
-const allowedOrigins = ['http://localhost:5173', 'https://zesty-pothos-ff7fb8.netlify.app/', 'https://q-rpay-app.vercel.app/']
+const allowedOrigins = ['http://localhost:5173', 'https://zesty-pothos-ff7fb8.netlify.app', 'https://q-rpay-app.vercel.app']
 
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 
-connectDB();
 
 app.get("/", (req, res) => res.send("API UP and Running!"));
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
 
+await connectDB();
 app.listen(port, () => console.log("API Started on port", port));
